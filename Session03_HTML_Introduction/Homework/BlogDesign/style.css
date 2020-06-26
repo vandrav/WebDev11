@@ -14,7 +14,10 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #4d191e;
+    color: #4d191e;
+    font-weight: bold;
+    font-size: 90%;
 }
 
 
@@ -38,4 +41,8 @@ li.right {
     display: block;
     padding: 8px;
     float: right;
+}
+
+#ch-color {
+    color: #4d4d00;
 }
