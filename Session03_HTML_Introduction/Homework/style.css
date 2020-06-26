@@ -1,0 +1,41 @@
+body {
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+
+/* list-style-type: none; - hides the bullets */
+
+
+/* overflow: hidden - make a invisible container for the ul so that the h1 element goes on the next row and not in the remaining space from the ul */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+
+/* float: left; - use float to get block elements to slide next to each other */
+
+
+/* display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), 
+and it allows us to specify padding (and height, width, margins, etc. if you want) */
+
+
+/* padding: 8px; - Since block elements take up the full width available, they cannot float next to each other. 
+Therefore, specify some padding to make them look good */
+
+li.left {
+    display: block;
+    padding: 8px;
+    float: left;
+}
+
+li.right {
+    display: block;
+    padding: 8px;
+    float: right;
+}
