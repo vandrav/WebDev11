@@ -1,0 +1,59 @@
+body {
+    background-color: #fffff0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+    border-right: 2px solid #d9d9d9;
+}
+
+
+/* display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)
+width: 60px; - Block elements take up the full width available by default. We want to specify a 60 pixels width */
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+li {
+    margin-left: 100px;
+}
+
+li a.active {
+    color: blue;
+}
+
+
+/* Change the link color on hover */
+
+li a:hover:not(.active) {
+    color: #d9d9d9;
+}
+
+
+/* Use the border-radius property to add rounded corners to an image. 50% will make the image circular 
+To center an image, set left and right margin to auto and make it into a block element */
+
+.dog-img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #d9d9d9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
