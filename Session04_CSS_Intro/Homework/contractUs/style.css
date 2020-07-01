@@ -1,19 +1,52 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    background-color: #eeeeee;
+    height: 150px;
+}
+
+div>h1 {
+    margin-top: 40px;
+    margin-left: 200px;
+    position: absolute;
+    font-size: 1.5cm;
+    font-weight: normal;
 }
 
 div>h1>span {
     color: #bfbfbf;
+    font-size: 1cm;
+}
+
+#form {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#form-left-side {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#form-right-side :after {
+    width: 50%;
+    float: right;
+    padding: 10px;
 }
 
 
 /* este mai ok sa punem marimea marginilor fata de element sau sa masam margin:auto si sa punem width pentru element? */
 
-body>div fieldset {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20px;
+fieldset {
     background-color: #f5f5f5;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -25,27 +58,9 @@ body>div fieldset {
     border-radius: 5px;
     float: right;
     margin-right: 10px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     padding: 10px 20px;
-}
-
-#form-left-side {
-    float: left;
-    width: 60%;
-    padding: 10px;
-}
-
-#form-right-side :after {
-    width: 40%;
-    float: right;
-    padding: 10px;
-}
-
-a.links {
-    margin: 40px;
-    padding: 20px;
-    border-top: 1px solid black;
-    text-decoration: none;
 }
 
 input[type=text] {
@@ -60,4 +75,18 @@ div>textarea {
     margin-bottom: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+#links {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+a {
+    margin: 60px;
+    text-decoration: none;
 }
