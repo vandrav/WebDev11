@@ -1,13 +1,21 @@
+/* Am schimbat fontul pentru a fii fara serif si am resetat margin si padding la 0*/
+
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
+
+/* Am facut containerul pentru header o noanta de gri si i-am dat o marime aprox cu cea din poza */
+
 #header {
     background-color: #eeeeee;
     height: 150px;
 }
+
+
+/* Am centrat headerul aprox ca in poza, position: absolute pentru a lua pozitia in raport cu div, fara setarea asta muta si div */
 
 div>h1 {
     margin-top: 40px;
@@ -17,19 +25,37 @@ div>h1 {
     font-weight: normal;
 }
 
-div>h1>span {
+
+/* am colorat cu o noanta de gri ce se afla in span */
+
+h1>span {
     color: #bfbfbf;
     font-size: 1cm;
 }
 
+
+/* este mai ok sa punem marimea marginilor fata de element sau sa masam margin:auto si sa punem width pentru element*/
+
+
+/* margin-left/right centreaza div-ul pe mijloc cu o marime de 60% din fereastra, */
+
 #form {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+
+/* am schimbat background pe o noanta de gri, barder-radius:5px rotunjeste colturile ferestrei iar marginea am facut-o tot o noanta de gri  */
+
+fieldset {
     background-color: #f5f5f5;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+
+/* am impartit fieldset-ul in partea din dreapta si din stanga si le-am dat 50% din spatiu amandurora a.i sa incapa "pe acelasi rand" */
 
 #form-left-side {
     float: left;
@@ -44,38 +70,42 @@ div>h1>span {
 }
 
 
-/* este mai ok sa punem marimea marginilor fata de element sau sa masam margin:auto si sa punem width pentru element? */
+/* am marit dimensiunile formatului de introdus text */
 
-fieldset {
-    background-color: #f5f5f5;
+input[type=text] {
+    /* margin-bottom: 1rem; */
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 100px;
+}
+
+
+/* am rotunjit si text area */
+
+textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
+
+/* am formatat butonul de submit pentru culoare, rotunjirea mariginilor */
+
 [type="submit"] {
+    float: right;
     background-color: blue;
     color: white;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    float: right;
     margin-right: 10px;
     margin-bottom: 5px;
-    border: 1px solid #ccc;
     padding: 10px 20px;
 }
 
-input[type=text] {
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 10px 40px;
-    display: inline-block;
-}
 
-div>textarea {
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
+/* am formatat div-ul in care stau link-urile a.i sa fie ca dimensiune exact cat ocupa link-urile, am pus scrisul pe centru cu text-align si vertical-align */
 
 #links {
     width: fit-content;
