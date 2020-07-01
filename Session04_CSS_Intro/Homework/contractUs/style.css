@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div>h1>span {
+    color: #bfbfbf;
+}
+
+
+/* este mai ok sa punem marimea marginilor fata de element sau sa masam margin:auto si sa punem width pentru element? */
+
+body>div fieldset {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+[type="submit"] {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+#form-left-side {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+
+#form-right-side :after {
+    width: 40%;
+    float: right;
+    padding: 10px;
+}
+
+a.links {
+    margin: 40px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-decoration: none;
+}
+
+input[type=text] {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+div>textarea {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
