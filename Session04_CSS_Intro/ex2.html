@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+    <style>
+        div>p>a {
+            color: blue;
+        }
+        
+        div>a {
+            color: green;
+        }
+        
+        div~p>span {
+            color: pink;
+        }
+        /* daca foloseam div a{ color:green } => se faceau toate a green deoarece ultima regula le suprascrie pe restul si ambele a sunt din div*/
+        /* pentru prima puteam folosi p>a { color:blue } */
+        /* pentru a3-a ar fi mers si div+p>span { color:ping } */
+    </style>
+</head>
+
+<body>
+
+    <div id=“container”>
+        <p class=“red”>This is some text</p>
+        <p>This is <span>more</span> text</p>
+        <p>Link to <a href=“http://www.scoalainformala.com”>Scoala Informala</a></p>
+        <a href=“http://www.google.com”>Google</a>
+    </div>
+    <p>This is <span>some other</span> text</p>...
+
+</body>
+
+</html>
