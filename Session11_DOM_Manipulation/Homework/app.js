@@ -8,13 +8,9 @@ function Person(firstName, lastName, gender, message) {
 }
 
 
-// selectam elementele din formular
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lasttName');
-const gender = document.querySelector('.gender');
-const message = document.getElementById('message');
-const submit = document.getElementById('submit');
 
+
+const submit = document.getElementById('submit');
 
 //creem un element nou care sa tina bannerul
 
@@ -22,25 +18,42 @@ var banner = document.createElement('p');
 banner.id = 'banner';
 
 
-//creem un obiect nou cu elementele selectate
-const user = new Person(firstName, lastName, gender, message);
-
 
 submit.addEventListener("click", function(e) {
-    if (user.firstName == null || user.lastName == null || user.gender == null || user.message == null) {
-        if (user.firstName == null) {
-            user.firstName.classList.toggle('must');
-        } else if (user.lastName == null) {
-            user.lastName.classList.toggle('must');
-        } else if (user.gender == null) {
-            user.gender.classList.toggle('must');
-        } else if (user.message == null) {
-            user.message.classList.toggle('must');
+    e.preventDefault();
+
+    // selectam elementele din formular
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const gender = document.querySelectorAll('.gender');
+    let newGender;
+    for (var i = 0; i < gender.length; i++) {
+        if (gender[i].checked) {
+            newGender = gender[i].value;
+        }
+    }
+    const message = document.getElementById('message');
+
+    //creem un obiect nou cu elementele selectate
+    const user = new Person(firstName.value, lastName.value, newGender, message.value);
+    console.log(user);
+
+    if (user.firstName == "" || user.lastName == "" || user.gender == "" || user.message == "") {
+        if (user.firstName == "") {
+            firstName.classList.add('must');
+        } else if (user.lastName == "") {
+            lastName.classList.add('must');
+        } else if (user.gender == "") {
+            gender.classList.add('must');
+        } else if (user.message == "") {
+            message.classList.add('must');
         }
         banner.className = 'missing-fields';
         banner.innerHTML = "You must complete all the required fields!"
+
     } else {
         banner.className = 'ok-fields';
         banner.textContent = "Thank you for contacting us, " + user.lastName;
+
     }
 })

@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <!-- Bannerul -->
-
-    <div id="banner"></div>
 
     <!-- Formularul -->
 
@@ -22,19 +19,15 @@
             <!-- Am impartit fieldset-ul in partea din dreapta si partea din stanga -->
 
             <div id="form-left-side" class="form-content">
-                <input type="text" name="FirstName" id="FirstName" placeholder="First Name">
+                <input type="text" name="FirstName" id="firstName" class="" placeholder="First Name">
                 <br>
-                <input type="text" name="LastName" id="LastName" placeholder="Last Name">
+                <input type="text" name="LastName" id="lastName" class="" placeholder="Last Name">
                 <br>
                 <label for="Gender">Gender</label>
                 <br>
-                <input type="radio" name="Male" id="male" class="gender">
-                <label for="male">M</label>
-                <br>
-                <input type="radio" name="Female" id="female" class="gender">
-                <label for="female">F</label>
-                <br>
-                <textarea name="Message" id="message" cols="50" rows="10" placeholder="Your message here ..."></textarea>
+                <input type="radio" name="gender" id="male" class="gender" value="male">M<br>
+                <input type="radio" name="gender" id="female" class="gender" value="female">F<br>
+                <textarea name="Message" id="message" class="" cols="50" rows="10" placeholder="Your message here ..."></textarea>
                 <br>
                 <input type="submit" value="Submit" id="submit">
             </div>
@@ -49,6 +42,7 @@
 
     </div>
 
+    <script src="app.js"></script>
 </body>
 
 </html>
