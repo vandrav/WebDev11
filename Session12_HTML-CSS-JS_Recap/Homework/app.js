@@ -1,50 +1,54 @@
 let addItem = document.getElementById('elAdd');
 let elements = [];
+let elList = document.querySelector('.elList');
+
+let newTable = document.createElement('table');
+elList.appendChild(newTable);
 
 addItem.addEventListener('click', e => {
     let element = document.getElementById('element').value;
-    let newTable = document.createElement('table');
-    let newTr = document.createElement('tr');
-    let newTd1 = document.createElement('td');
-    let newTd2 = document.createElement('td');
-    let elList = document.querySelector('.elList');
-    newTd1.className = 'elList-control';
-    newTd2.className = 'elList-control';
+    // let elList = document.querySelector('.elList');
+
+    // let newTable = document.createElement('table');
+
+    // let newTr = document.createElement('tr');
+    // let newTd1 = document.createElement('td');
+    // let newTd2 = document.createElement('td');
+    // newTd1.className = 'elList-control';
+    // newTd2.className = 'elList-control';
+
+    // console.log(elements);
+
+
 
 
     if (elements == "") {
         elements.push(element);
 
+        let newTr = newTable.insertRow(0);
+        let newTd1 = newTr.insertCell(0);
+        let newTd2 = newTr.insertCell(1);
+        newTd1.className = 'elList-control';
+        newTd2.className = 'elList-control';
         newTd1.innerHTML = '<strong> Item description </strong>';
         newTd2.innerHTML = '<strong> Action </strong>';
 
-        newTr.appendChild(newTd1);
-        newTr.appendChild(newTd2);
-        newTable.appendChild(newTr);
-        console.log(newTable);
-        elList.appendChild(newTable);
 
-        // newTd1.innerHTML = element;
-        // newTd2.innerHTML = '<button class="mark">Mark as buyed</button>';
-
-        // newTr.appendChild(newTd1);
-        // newTr.appendChild(newTd2);
-        // newTable.appendChild(newTr);
-        // elList.appendChild(newTable);
-
-    } else {
-        newTd1.innerHTML = element;
-        newTd2.innerHTML = '<button class="mark">Mark as buyed</button>';
-
-        newTr.appendChild(newTd1);
-        newTr.appendChild(newTd2);
-        newTable.appendChild(newTr);
-        elList.appendChild(newTable);
     }
 
+    elements.push(element);
 
+    let newTr = newTable.insertRow(1);
+    let newTd1 = newTr.insertCell(0);
+    let newTd2 = newTr.insertCell(1);
+    newTd1.className = 'elList-control';
+    newTd2.className = 'elList-control';
+
+    newTd1.innerHTML = element;
+    newTd2.innerHTML = '<button class="mark">Mark as buyed</button>';
 
 });
+
 
 
 
