@@ -2,15 +2,14 @@ let addItem = document.getElementById('elAdd'); //selectam butonul de 'Add Item'
 const elList = document.querySelector('.elList'); //selectam div-ul in care urmeaza sa fie inserat tabelul
 const newTable = document.createElement('table'); //creem un element table
 elList.appendChild(newTable); //adaugam tabelul nou creat in div
-
+const sortAsc = document.getElementById('ascendent');
+const sortDesc = document.getElementById('descendent');
 
 class Database {
     constructor(items = [], markElem = []) {
         this.items = items;
         this.markElem = markElem;
     }
-
-
 }
 
 shoppingList = new Database();
@@ -30,7 +29,6 @@ addItem.addEventListener('click', e => {
         newTd1.innerHTML = '<strong> Item description </strong>';
         newTd2.innerHTML = '<strong> Action </strong>';
 
-
     }
 
     let newTr = newTable.insertRow(1);
@@ -43,7 +41,7 @@ addItem.addEventListener('click', e => {
     newTd1.innerHTML = element;
     newTd2.innerHTML = '<button class="mark">Mark as buyed</button>';
 
-    shoppingList.items.push(newTd1);
+    shoppingList.items.push(newTd1.innerHTML);
     shoppingList.markElem.push(newTd2.innerHTML);
 
     newTd2.addEventListener('click', e => {
@@ -52,11 +50,5 @@ addItem.addEventListener('click', e => {
 
 });
 
-// newTable.addEventListener('click', e => {
-//     if (e.target.classList.contains('mark')) {
-//         if (e.target.classList.contains('item')) {
-
-//             e.target.classList.toggle('buyed');
-//         }
-//     }
-// })
+sortAsc.addEventListener('click', () => shoppingList.items.sort());
+sortDesc.addEventListener('click', () => shoppingList.items.reverse());
