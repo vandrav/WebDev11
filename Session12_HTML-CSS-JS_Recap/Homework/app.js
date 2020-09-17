@@ -46,5 +46,17 @@ addItem.addEventListener('click', e => {
     shoppingList.items.push(newTd1);
     shoppingList.markElem.push(newTd2.innerHTML);
 
+    newTd2.addEventListener('click', e => {
+        newTd1.classList.toggle('buyed');
+    })
 
 });
+
+// newTable.addEventListener('click', e => {
+//     if (e.target.classList.contains('mark')) {
+//         if (e.target.classList.contains('item')) {
+
+//             e.target.classList.toggle('buyed');
+//         }
+//     }
+// })
