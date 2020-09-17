@@ -31,7 +31,7 @@ addItem.addEventListener('click', e => {
 
     }
 
-    let newTr = newTable.insertRow(1);
+    let newTr = newTable.insertRow(newTable.rows.length);
     let newTd1 = newTr.insertCell(0);
     let newTd2 = newTr.insertCell(1);
 
