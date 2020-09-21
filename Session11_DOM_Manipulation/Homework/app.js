@@ -36,15 +36,19 @@ submit.addEventListener("click", function(e) {
 
     //creem un obiect nou cu elementele selectate
     const user = new Person(firstName.value, lastName.value, newGender, message.value);
-    console.log(user);
+    console.log(user.value);
 
-    if (user.firstName == "" || user.lastName == "" || user.gender == "" || user.message == "") {
+
+    // for (var i = 0; i < user.length; i++) {
+    //     if (user[i] == "") {
+
+    //     }
+    // }
+    if (user.firstName == "" || user.lastName == "" || user.message == "") {
         if (user.firstName == "") {
             firstName.classList.add('must');
         } else if (user.lastName == "") {
             lastName.classList.add('must');
-        } else if (user.gender == "") {
-            gender.classList.add('must');
         } else if (user.message == "") {
             message.classList.add('must');
         }

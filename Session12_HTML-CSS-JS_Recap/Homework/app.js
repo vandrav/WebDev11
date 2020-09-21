@@ -52,3 +52,5 @@ addItem.addEventListener('click', e => {
 
 sortAsc.addEventListener('click', () => shoppingList.items.sort());
 sortDesc.addEventListener('click', () => shoppingList.items.reverse());
+
+sortAsc
