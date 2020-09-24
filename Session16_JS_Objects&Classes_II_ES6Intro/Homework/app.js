@@ -53,13 +53,16 @@ class UI {
         cell3.innerHTML = book.isbn.value;
         cell4.innerHTML = '<a href = "#"> X </a>';
 
-        book.deleteBtn = cell4.innerHTML;
+        book.deleteBtn = cell4;
 
     }
 
     deleteBook(book) {
-        let index = book.deleteBtn.parentElememnt.rowIndex;
-        tableElem.deleteRow(i);
+        book.deleteBtn.addEventListener('click', () => {
+            let index = book.deleteBtn.parentElement.rowIndex;
+            tableElem.deleteRow(index);
+        })
+
     }
 }
 
@@ -75,7 +78,9 @@ formElem.addEventListener('submit', (e) => {
         ui.showSuccess();
         let book = new Book(titleElem, authorElem, isbnElem);
         ui.addBook(book);
-        book.deleteBtn.addEventListener('click', ui.deleteBook());
+        console.log(book.deleteBtn.parentElement.rowIndex);
+        // book.deleteBtn.addEventListener('click', ui.deleteBook(book));
+        ui.deleteBook(book);
 
     }
     ui.clearFields();
