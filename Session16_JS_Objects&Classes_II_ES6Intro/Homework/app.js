@@ -3,6 +3,7 @@ const tableElem = document.querySelector('.elList table');
 const titleElem = document.getElementById('title');
 const authorElem = document.getElementById('author');
 const isbnElem = document.getElementById('ISBN');
+let books = [];
 
 class Book {
     constructor(title, author, isbn, deleteBtn = '') {
@@ -48,9 +49,9 @@ class UI {
         let cell3 = row.insertCell();
         let cell4 = row.insertCell();
 
-        cell1.innerHTML = book.title.value;
-        cell2.innerHTML = book.author.value;
-        cell3.innerHTML = book.isbn.value;
+        cell1.innerHTML = book.title;
+        cell2.innerHTML = book.author;
+        cell3.innerHTML = book.isbn;
         cell4.innerHTML = '<a href = "#"> X </a>';
 
         book.deleteBtn = cell4;
@@ -69,20 +70,18 @@ class UI {
 
 formElem.addEventListener('submit', (e) => {
     e.preventDefault();
-
     let ui = new UI();
 
     if (titleElem.value === '' || authorElem.value === '' || isbnElem.value === '') {
         ui.showError();
     } else {
         ui.showSuccess();
-        let book = new Book(titleElem, authorElem, isbnElem);
+        let book = new Book(titleElem.value, authorElem.value, isbnElem.value);
         ui.addBook(book);
-        console.log(book.deleteBtn.parentElement.rowIndex);
+        // console.log(book.deleteBtn.value.parentElement.value.rowIndex.value);
         // book.deleteBtn.addEventListener('click', ui.deleteBook(book));
         ui.deleteBook(book);
-
+        books.push(book);
     }
     ui.clearFields();
-
 });
