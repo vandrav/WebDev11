@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #d9f3f8;
+}
+
+div {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3,
+hr {
+    margin: 10px;
+}
+
+#weather>p {
+    margin: 10px;
+}
