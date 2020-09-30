@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
 }
 
 body {
@@ -22,4 +23,41 @@ hr {
 
 #weather>p {
     margin: 10px;
+}
+
+#control {
+    display: flex;
+}
+
+#getLocation,
+#weather,
+#forecast {
+    padding: 10px;
+    margin: 10px
+}
+
+#control button {
+    background-color: #0984e3;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    width: 10%;
+    box-shadow: 2px 2px 2px 2px #07487a;
+}
+
+#control button:hover {
+    background-color: #0e94fa;
+}
+
+#control button:active {
+    background-color: #07487a;
+}
+
+#getLocation {
+    width: 70%;
+    border: 2px solid #dad9d9;
+}
+
+#getLocation:focus {
+    border: 2px solid #aaa6a6;
 }
