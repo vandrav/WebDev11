@@ -14,21 +14,27 @@
         <button id="weather">Afiseaza vremea</button>
         <button id="forecast">Afiseaza prognoza</button>
     </div>
-    <div>
+    <div id="weather-card">
         <h3>Vremea acum</h3>
         <hr>
-        <img src="" alt="" id="icon">
-        <p id="desc">Descriere:</p>
-        <p id="humidity">Umiditate:</p>
-        <p id="pressure">Presiune:</p>
-        <p id="temp">Temperatura curenta:</p>
-        <p id="dayMax">Minima zilei:</p>
-        <p id="dayMin">Maxima zilei:</p>
+        <div id="weather-card-control">
+            <div>
+                <img src="" alt="" id="icon">
+                <p id="desc">Descriere:</p>
+                <p id="humidity">Umiditate:</p>
+                <p id="pressure">Presiune:</p>
+                <p id="temp">Temperatura curenta:</p>
+                <p id="dayMax">Minima zilei:</p>
+                <p id="dayMin">Maxima zilei:</p>
+            </div>
+            <div id="map"></div>
+        </div>
     </div>
-    <div id="forecast">
+    <div id="forecast-card">
         <h3>Vremea in urmatoarele zile</h3>
         <hr>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuaHeqScbFRB5NFkQuoinskBt2QPWYycs"></script>
     <script src="app.js"></script>
 </body>
 

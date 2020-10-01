@@ -61,3 +61,14 @@ hr {
 #getLocation:focus {
     border: 2px solid #aaa6a6;
 }
+
+#weather-card-control {
+    display: flex;
+    height: 100%;
+}
+
+#map {
+    width: 400px;
+    height: 200px;
+    margin: 10px
+}
