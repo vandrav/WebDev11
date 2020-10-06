@@ -1,0 +1,19 @@
+body {
+    font-size: x-large;
+}
+
+.google-link {
+    color: blue;
+}
+
+.cnn-link {
+    color: red;
+}
+
+#w3schools-link {
+    color: green;
+}
+
+p {
+    color: magenta;
+}

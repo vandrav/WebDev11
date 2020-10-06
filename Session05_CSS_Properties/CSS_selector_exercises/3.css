@@ -1,0 +1,23 @@
+[class=nav-bar] {
+    background-color: gray;
+}
+
+[class~=logo] {
+    color: red;
+}
+
+[class|=home-top] {
+    color: green;
+}
+
+[class^=ab] {
+    color: blue;
+}
+
+[class*=membership] {
+    color: magenta;
+}
+
+[class$=contact] {
+    color: orange;
+}

@@ -1,0 +1,11 @@
+div>p:first-child>span {
+    color: red;
+}
+
+div>p:last-child>span {
+    color: blue;
+}
+
+body>p>span {
+    color: green;
+}

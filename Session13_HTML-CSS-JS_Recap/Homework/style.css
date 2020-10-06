@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+/* section {
+    border: 1px solid green;
+} */
+
+.form {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.form-control {
+    padding: 10px 20px;
+    margin: 0 3px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+input,
+select,
+textarea,
+option,
+button {
+    outline: none!important;
+}
+
+input[type=text] {
+    border: 2px solid #808080;
+}
+
+input[type=text]:focus {
+    border-color: #9191cf;
+}
+
+#elAdd {
+    background-color: #a6dda6;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1.5px 1.5px #808080;
+}
+
+button#elAdd:active {
+    background-color: #8ec08e;
+    box-shadow: 0 0.5px #777777;
+}
+
+.sort {
+    padding: 10px 30px;
+    display: flex;
+}
+
+.sort-control {
+    padding: 5px 15px;
+    margin: 0 3px;
+    background-color: #b082bb;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1px 1px #808080;
+}
+
+button.sort-control:active {
+    background-color: #976fa1;
+    box-shadow: none;
+}
+
+.elList {
+    padding: 10px 25px;
+    display: flex;
+}
+
+.elList-control {
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.mark {
+    padding: 2px 15px;
+    margin: 0 3px;
+    background-color: #e793ac;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1px 1px #808080;
+}
+
+button.mark:active {
+    background-color: #c77b92;
+    box-shadow: none;
+}
+
+.buyed {
+    text-decoration: line-through;
+}

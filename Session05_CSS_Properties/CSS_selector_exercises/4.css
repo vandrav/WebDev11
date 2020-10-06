@@ -1,0 +1,23 @@
+table {
+    background-color: gray;
+}
+
+table tr:nth-child(3n) {
+    background-color: blue;
+}
+
+table tr:nth-child(3n+1) {
+    background-color: red;
+}
+
+table tr:nth-child(3n-1) {
+    background-color: green;
+}
+
+table tr:first-child {
+    background-color: magenta;
+}
+
+table tr:last-child {
+    background-color: orange;
+}

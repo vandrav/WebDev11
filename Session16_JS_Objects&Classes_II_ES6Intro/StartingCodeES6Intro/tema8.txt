@@ -1,0 +1,2 @@
+unde se adauga facem un tabel
+pe submit se pune un eventlistner unde verificam daca avem imput si creaza un nou element tr care are td: book.title,book.author,book.ISBN

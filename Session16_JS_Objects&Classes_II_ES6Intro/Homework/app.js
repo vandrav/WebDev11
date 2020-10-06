@@ -59,12 +59,11 @@ class UI {
     }
 
     deleteBook(book) {
-        book.deleteBtn.addEventListener('click', () => {
+        book.deleteBtn.addEventListener('click', (e) => {
             let index = book.deleteBtn.parentElement.rowIndex;
             tableElem.deleteRow(index);
             books.splice(index - 1, 1);
         })
-
     }
 }
 

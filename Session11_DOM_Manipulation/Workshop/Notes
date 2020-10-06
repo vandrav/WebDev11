@@ -1,0 +1,12 @@
+HTML Doc:
+
+-head/
+-body
+    -div
+        -h1 - rock paper scissors game ( or logo image)
+        -3 images (rocket, scissors, paper);
+        -button: play
+        -p : who won
+
+JS file:
+    - function - returns 0, 1, 2 depending on what image is clicked
