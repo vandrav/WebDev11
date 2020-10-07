@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu-table");
 
 window.onload = showMenu;
 
+
 function showMenu() {
     fetch(MENU_SERVER_URL)
         .then(res => res.json())
@@ -21,9 +22,5 @@ function showMenu() {
                                     </tr>
                                     `
             }
-
-
-
         })
-
 }

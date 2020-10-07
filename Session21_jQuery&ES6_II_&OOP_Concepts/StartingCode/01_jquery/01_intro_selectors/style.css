@@ -1,0 +1,18 @@
+body{
+    font-size: 17px;
+    font-family: arial;
+    line-height: 1.5em;
+}
+header{
+    background:rgb(245, 174, 174);
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px black solid;
+    margin-bottom: 10px;
+}
+#container{
+    width:90%;
+    margin:auto;
+    padding:10px;
+}
