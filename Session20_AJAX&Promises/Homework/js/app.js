@@ -1,5 +1,5 @@
 $(document).ready(showMenu);
-
+$('#filterForm').on("submit", filterRecipes);
 
 // folosim o functie care genereaza continutul paginii indexs.html
 
@@ -73,6 +73,39 @@ function getRecipe() {
                         </div>
                         `;
             $('.container #recipe').html(output);
+        })
+        .catch((err) => console.log(err));
+}
+
+function filterRecipes(e) {
+    let keyWord = $('#filterText').val();
+    // $('.menu table').html("");
+    e.preventDefault();
+    fetch("https://restaurant-menu-v1.firebaseio.com/.json")
+        .then((response) => response.json())
+        .then((data) => {
+            let menu = data.menu;
+            let output = `
+                        <tr >
+                            <td id="preparat">Meal</td>
+                            <td>Ingredients</td>
+                            <td>Recipe</td>
+                        </tr>
+                        `;
+            $.each(menu, (index, meal) => {
+                if (meal.nume.includes(keyWord)) {
+                    output += `
+                    <tr >
+                        <td id="preparat">${meal.nume} <img src="${meal.imagine}"></td>
+                        <td>${meal.ingrediente}</td>
+                        <td><a onclick="showRecipe('${index}')" class="btn btn-primary" href="#">Details</a></td>
+                    </tr>
+            `;
+                }
+
+            })
+
+            $('.menu table').html(output)
         })
         .catch((err) => console.log(err));
 }

@@ -50,24 +50,24 @@ h2 {
     margin: 10px;
 }
 
-#searchForm {
+#filterForm {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-#searchText {
+#filterText {
     padding: 5px;
     width: 300px;
     margin: 10px;
 }
 
-#searchText:focus {
+#filterText:focus {
     border: 2px solid #00adb5;
 }
 
-#searchForm button {
+#filterForm button {
     padding: 6px 10px;
 }
 
