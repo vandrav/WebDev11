@@ -5,9 +5,9 @@ ecran meniu preparate
 
 [x] afisati preparatele sub forma de tabel(imagine preparat, nume, ingrediente si buton detalii)
 
-[] buton detalii, contine un link ce va directiona catre pagina details.html si va include in link id-ul preparatului:
+[x] buton detalii, contine un link ce va directiona catre pagina details.html si va include in link id-ul preparatului:
 
-[] exemplu de link pentru redirect: http://.../meniu/details.html?id=0
+[x] exemplu de link pentru redirect: http://.../meniu/details.html?id=0
 
 [] adaugati un filtru ce contine, un input text si un buton de cautare, ce filtreaza preparatele in pe baza ingredientelor
 
