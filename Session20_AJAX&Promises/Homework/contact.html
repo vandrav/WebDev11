@@ -4,14 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>contactUS</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
+    <!-- Headerul paginii -->
+ <nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
+    
+    <!-- Formularul -->
 
+    <div id="form">
+        <form>
+            <fieldset>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- Am impartit fieldset-ul in partea din dreapta si partea din stanga -->
+
+                <div id="form-left-side">
+                    <label for="Name"> <strong>Name</strong> </label>
+                    <br>
+                    <input type="text" name="Name" id="Name" placeholder="Enter name">
+                    <br>
+                    <label for="Email"> <strong>Email</strong> </label>
+                    <br>
+                    <input type="text" name="Email" id="Email" placeholder="Enter email">
+                    <br>
+                    <label for="Subject"> <strong>Subject</strong> </label>
+                    <br>
+                    <input type="text" name="Subject" id="Subject" placeholder="Enter subject">
+                </div>
+
+                <div id="form-right-side">
+                    <label for="Message"> <strong>Message</strong> </label>
+                    <br>
+                    <textarea name="Message" id="Message" cols="50" rows="13" placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+    <!-- Textul de sub formular -->
+    <div style="text-align: center; vertical-align: middle; margin-top: 20px;">
+        <p>Or find us on social media</p>
+    </div>
+
+    <div id="links">
+        <a href=" https://facebook.com ">Facebook</a>
+        <a href="https://twitter.com ">Twitter</a>
+        <a href="https://instagram.com ">Instagram</a>
+    </div>
 </body>
 
 </html>

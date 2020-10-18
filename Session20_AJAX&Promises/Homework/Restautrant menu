@@ -9,11 +9,11 @@ ecran meniu preparate
 
 [x] exemplu de link pentru redirect: http://.../meniu/details.html?id=0
 
-[] adaugati un filtru ce contine, un input text si un buton de cautare, ce filtreaza preparatele in pe baza ingredientelor
+[x] adaugati un filtru ce contine, un input text si un buton de cautare, ce filtreaza preparatele in pe baza ingredientelor
 
 * ecran detalii preparat
 
-[] ecranul de detalii preparat, contine imaginea preparatului, numele, ingredientele si reteta
+[x] ecranul de detalii preparat, contine imaginea preparatului, numele, ingredientele si reteta
 
 * ecran contact
 
