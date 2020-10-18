@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fetch API</h1>
+        <button id="get-text-btn">GET TEXT</button>
+        <button id="get-json-btn">GET JSON</button>
+        <button id="get-api-btn">GET API DATA</button>
+        <br><br>
+        <div id="output"></div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBIE3MvIkay7dYThw5fqy_0Sb9pRdoZc4E",
+            authDomain: "test-226b4.firebaseapp.com",
+            databaseURL: "https://test-226b4.firebaseio.com",
+            projectId: "test-226b4",
+            storageBucket: "test-226b4.appspot.com",
+            messagingSenderId: "1007114119783",
+            appId: "1:1007114119783:web:c809844cdc75c4046842c2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
