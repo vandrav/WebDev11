@@ -1,0 +1,24 @@
+.example {
+    display: flex;
+}
+
+.item-relative {
+    position: relative;
+    /*este relativ-> se poate muta cu cat vrem noi fata de pozitia initiala (se raporteaza la punctul lui initial) */
+    top: 10px;
+    left: 10px;
+}
+
+.item-absolute {
+    position: absolute;
+    /* se raporteaza  la primul parinte care nu este static ... default daca nu ii shcimabm pozitia atunci se raporteaza la parinte ->posibil de la flex*/
+    top: -30px;
+    left: 30px;
+    z-index: -1;
+    /* toate elem avand default 0 v-a ascunde elemntul in spatele celorlalte*/
+}
+
+.absolute {
+    position: relative;
+    /* facem a.i. copilul absolut sa se raporteze la el*/
+}

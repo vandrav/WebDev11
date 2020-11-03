@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    /*nu ia in considerare paddingul si margin la marimea boxului -> fara asta cele 2 carduri nu vor fi pe acelasi rand */
+}
+
+.container {
+    max-width: 960px;
+    /*nu lasa in afara display-ului ce nu se sub 960 px */
+    margin: auto;
+    /* pune margini egale atat in stanga cat si in dreapta */
+}
+
+.card {
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.card p,
+.card h2 {
+    text-align: center;
+}
+
+#card-2 {
+    float: left;
+    width: 70%;
+}
+
+#card-3 {
+    float: right;
+    width: 30%;
+}
